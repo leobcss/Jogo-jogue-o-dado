@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Jogue o Dado</title>
+  </head>
+
+  <body>
+    <main>
+      <section class="player player--0 player--active">
+        <h2 class="name" id="name--0">Player 1</h2>
+        <p class="score" id="score--0">0</p>
+        <div class="current">
+          <p class="current-label">Acumulado</p>
+          <p class="current-score" id="current--0">0</p>
+        </div>
+      </section>
+
+      <section class="player player--1">
+        <h2 class="name" id="name--1">Player 2</h2>
+        <p class="score" id="score--1">0</p>
+        <div class="current">
+          <p class="current-label">Acumulado</p>
+          <p class="current-score" id="current--1">0</p>
+        </div>
+      </section>
+
+      <img src="dice-1.png" alt="Playing dice" class="dice" />
+      <button class="btn btn--new">🔄 Novo Jogo</button>
+      <button class="btn btn--roll">🎲 jogar dado</button>
+      <button class="btn btn--hold">📥 segurar</button>
+      <button class="btn btn--info">ℹ</button>
+    </main>
+
+    <div class="modal hidden">
+      <button class="btn--close-modal">✖</button>
+      <h2 class="modal-name">Como Jogar</h2>
+      <p class="modal-text">
+        PLAYER 1 joga o dado, o número que sair será acumulado. O PLAYER 1 pode
+        segurar os pontos e adicioná-los ao placar total ou jogar o dado de novo
+        e de novo, o quanto ele quiser. Mas se ele tirar o número 1, ele perderá
+        toda sua pontuação acumulada e terá que passar a vez ao PLAYER 2. O
+        mesmo vale para o PLAYER 2. O primeiro que conseguir 100 pontos no
+        placar total, GANHA!
+      </p>
+    </div>
+
+    <div class="overlay hidden"></div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
