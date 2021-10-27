@@ -9,3 +9,6 @@
 - HTML
 - CSS
 - JavaScript
+
+## ACESSO:
+Você pode acessar o jogo em: https://jogueodado.netlify.app/
